@@ -10,7 +10,12 @@ public class task1_2 {
         for (int i = 0; i < mas.length; i++) {
             System.out.print("mas[" + i + "] = ");
             mas[i] = in.nextInt();
+
         }
+        sortAndPrint(mas);
+    }
+
+    private static void sortAndPrint(int mas[]) {
         System.out.print("Initial array: " + Arrays.toString(mas) + "\n");
         for (int j = 1; j < mas.length; j++) {
             for (int i = 1; i < mas.length; i++) {
@@ -22,6 +27,6 @@ public class task1_2 {
             }
         }
         System.out.print("Sorted array: " + Arrays.toString(mas));
-
     }
 }
+
